@@ -4,23 +4,10 @@
 # ("Copyright (c) 2019-2026, The NESOMIC authors").
 
 Institutions
-  Jardín Botánico Canario "Viera y Clavijo" - Unidad Asociada al CSIC (Cabildo de Gran Canaria)
   Instituto Tecnológico de Canarias, S.A. (ITC)
-  Gestión y Planeamiento Territorial y Medioambiental, S.A. (Gesplan)
 
-Initial authors (NEXTGENDEM project team)
-  Juli Caujapé Castells (JBCVCUACSIC)
-  Ruth Jaén Molina (JBCVCUACSIC)
-  Antonio Díaz Pérez (Gesplan)
-  Isabel Saro Hernández (JBCVCUACSIC)
-  Inmaculada Guillermes Vázquez (JBCVCUACSIC)
-  Miguel González Pérez (JBCVCUACSIC)
-  Rafael Nebot Medina (ITC)
-  Daniel Reyes Parrilla (ITC)
-  Alejandro Curbelo Fontelos (ITC)
-  Carlos Caraballo Casañas (ITC)
+Authors
   Paula Moreno Fajardo (ITC)
-
-Other contributors to this repository
-  Andrés García (upstream OpenDx28/docker-slicer)
+  Rafael Nebot Medina (ITC)
   Francisco Fumero (Ispana)
+  Andrés García (OpenDx28)

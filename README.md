@@ -57,9 +57,8 @@ kubectl apply -k .
 BSD 3-Clause License, the same as the rest of the NESOMIC platform: see `LICENSE`. Copyright
 belongs to the NESOMIC authors listed in `AUTHORS`.
 
-Developed within the NEXTGENDEM project (https://www.nextgendem.eu), funded by the Interreg MAC
-2014-2020 Cooperation Programme (project code MAC2/4.6d/236), and continued under a commission
-from the Cabildo de Gran Canaria.
+Started in the OpenDx28 project and continued under a commission from the Cabildo de Gran
+Canaria.
 Based on [OpenDx28/docker-slicer](https://github.com/OpenDx28/docker-slicer). Bundled third-party code keeps
 its own license, listed below.
 
