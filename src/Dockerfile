@@ -20,6 +20,7 @@ WORKDIR $HOME
 ENV SLICER_VERSION=$SLICER_VERSION
 COPY ./install_slicer.sh $INST_SCRIPTS/slicer/
 RUN bash $INST_SCRIPTS/slicer/install_slicer.sh && rm -rf $INST_SCRIPTS/slicer/
+COPY --chmod=755 ./slicer-launcher.sh /usr/bin/slicer
 
 # Install WebDAV
 RUN apt-get -y update \
