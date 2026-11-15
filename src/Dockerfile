@@ -1,8 +1,10 @@
 ARG BASE_IMAGE="ubuntu-desktop:latest"
 FROM $BASE_IMAGE
 
-ARG SLICER_VERSION="5.2.2"
-ARG SLICER_DOWNLOAD_URL="https://download.slicer.org/bitstream/63f5bee68939577d9867b4c7"
+# Stable release. The id is the one https://download.slicer.org/download?os=linux&stability=release
+# redirects to; bump both together.
+ARG SLICER_VERSION="5.12.4"
+ARG SLICER_DOWNLOAD_URL="https://download.slicer.org/bitstream/6aa1beb7ce9de556d3010204"
 
 USER root
 
@@ -15,6 +17,7 @@ WORKDIR $HOME
 ######### Customize Container Here ###########
 
 # Install Slicer 3D
+ENV SLICER_VERSION=$SLICER_VERSION
 COPY ./install_slicer.sh $INST_SCRIPTS/slicer/
 RUN bash $INST_SCRIPTS/slicer/install_slicer.sh && rm -rf $INST_SCRIPTS/slicer/
 
@@ -23,6 +26,9 @@ RUN apt-get -y update \
     && apt-get -y install python2 python-kid \
     && apt-get clean
 COPY ./easydav /opt/easydav
+
+# Scenes, DICOM database and file dialogs start in Documents, the only directory that persists
+COPY ./Slicer.ini $HOME/.config/slicer.org/Slicer.ini
 
 # Custom startup script
 COPY ./custom_startup.sh $STARTUPDIR/custom_startup.sh

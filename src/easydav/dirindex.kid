@@ -18,10 +18,10 @@ def path_only(url):
 <html xmlns:py="http://purl.org/kid/ns#" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Index for ${url_to_unicode(real_url)}</title>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <style type="text/css">
   .size {
     text-align: right;
@@ -36,7 +36,7 @@ def path_only(url):
     <form class="form-inline" role="form"
       action="#" method="post" enctype="multipart/form-data">
       <div class="form-group">
-        <input type="file" name="file" size="50" />
+        <input type="file" class="btn btn-default" name="file" size="50" />
       </div>
       <input type="submit" value="Upload"
           class="btn btn-default"

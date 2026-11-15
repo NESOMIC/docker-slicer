@@ -2,6 +2,14 @@
 
 This repository holds a Docker image configured to run the 3D Slicer application in a VNC server compatible with 3D acceleration using Nvidia GPUs. It also includes a WebDAV server with a web UI running on port 8085.
 
+## Nesomic
+
+Branch `nesomic` is the image used for the per-user sessions of the Nesomic
+[Slicer Hub](https://github.com/NESOMIC/3dslicerhub): current stable 3D Slicer, software rendering
+when the container has no GPU (the NVIDIA variables are only set when a card is present), and
+scenes / DICOM database defaulting to `~/Documents`, the directory the hub persists. The `k8s/`
+directory is the original single-session deployment and is not used by the hub.
+
 ## Instructions
 
 Build the image locally:
