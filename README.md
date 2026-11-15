@@ -52,6 +52,12 @@ cd k8s
 kubectl apply -k .     
 ```
 
+## License
+
+BSD 3-Clause License, the same as the rest of the NEXTGENDEM / NESOMIC platform. See `LICENSE`.
+Based on [OpenDx28/docker-slicer](https://github.com/OpenDx28/docker-slicer). Bundled third-party code keeps
+its own license, listed below.
+
 ## Third-party copyright notices
 
 License for files `.devcontainer/library-scripts/common-debian.sh` and `.devcontainer/library-scripts/docker-debian.sh`
